@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台式浪漫的極致：夜市牛排 | 美味背後的秘密</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&family=Outfit:wght@400;600;800&family=Bangers&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#FFD700',
+                            orange: '#FF8C00',
+                            red: '#E63946',
+                            dark: '#1A1A1A',
+                            accent: '#F4A261'
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                        comic: ['Bangers', 'cursive'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'sizzle': 'sizzle 0.2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        sizzle: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02) rotate(0.5deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFD700 0%, #FF8C00 50%, #E63946 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-image-container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, #0f0f0f, transparent);
+        }
+        .comic-border {
+            box-shadow: 8px 8px 0px 0px rgba(230, 57, 70, 0.5);
+        }
+        .section-divider {
+            height: 4px;
+            width: 80px;
+            background: #E63946;
+            margin: 2rem 0;
+            border-radius: 2px;
+        }
+        ::selection {
+            background: #FF8C00;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center glass-card rounded-none border-t-0 border-x-0">
+        <div class="text-2xl font-display font-800 tracking-tighter gradient-text">SIZZLE.TW</div>
+        <div class="text-sm font-medium tracking-widest text-gray-400">M11408002</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-24 pb-12 px-4 md:px-0 max-w-6xl mx-auto overflow-hidden">
+        <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-[0.2em] uppercase bg-brand-red text-white rounded-full">Classic Taiwanese Street Food</span>
+            <h1 class="text-4xl md:text-7xl font-display font-800 leading-tight mb-6">
+                台式浪漫的極致：<br>
+                <span class="gradient-text">夜市牛排為什麼這麼香？</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light">
+                那一聲「滋滋響」背後的美味秘密，是一場融合視覺、聽覺與味覺的庶民劇。
+            </p>
+        </div>
+
+        <!-- Banner Image Component -->
+        <div class="relative group mx-auto max-w-5xl">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-red via-brand-orange to-brand-gold rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+            <div class="relative hero-image-container overflow-hidden rounded-3xl bg-black border border-white/10 animate-sizzle">
+                <img src='https://opal.google/board/blobs/e964c864-4217-437e-af13-ae7e49ba8910' alt='台式浪漫的極致：夜市牛排 Banner' class="w-full h-auto object-cover transform transition duration-700 group-hover:scale-105" />
+                <div class="absolute top-6 right-6 font-comic text-5xl text-brand-gold rotate-12 drop-shadow-[0_4px_4px_rgba(0,0,0,1)] select-none">SIZZLE!</div>
+                <div class="absolute bottom-10 left-10 z-10 hidden md:block">
+                    <p class="text-white/60 text-xs font-mono tracking-widest uppercase mb-2">Marvel Animation Style Illustration</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-black/50 backdrop-blur-md rounded border border-white/20 text-[10px] text-white">粗獷墨線</span>
+                        <span class="px-3 py-1 bg-black/50 backdrop-blur-md rounded border border-white/20 text-[10px] text-white">英雄感構圖</span>
+                        <span class="px-3 py-1 bg-black/50 backdrop-blur-md rounded border border-white/20 text-[10px] text-white">漫威網點</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        
+        <!-- Intro Section -->
+        <section class="mb-20">
+            <p class="text-xl md:text-2xl leading-relaxed text-gray-200 font-light italic border-l-4 border-brand-orange pl-8 mb-8">
+                在台灣的夜市漫步，如果少了那一聲充滿穿透力的「滋滋響」，整座夜市彷彿就丟了魂。對許多台灣人來說，那種帶有強烈進攻性的香氣，往往是嗅覺記憶裡最直接、也最溫暖的一環。
+            </p>
+        </section>
+
+        <!-- Bento Grid Layout for Content -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
+            
+            <!-- Item 1: Sizzle -->
+            <div class="md:col-span-8 glass-card p-8 hover:border-brand-orange/50 transition-colors group">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="text-4xl font-display font-800 text-brand-red opacity-50 group-hover:opacity-100 transition-opacity">01</span>
+                    <h2 class="text-2xl font-bold text-white">噴香開場：滋滋響才是魂</h2>
+                </div>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    當老闆熟練地將醃好的肉排覆蓋在燒得紅燙的鐵板上，高溫瞬間激發出的白煙，就是這場大戲的開場白。
+                </p>
+                <div class="bg-black/40 rounded-xl p-6 border border-white/5">
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-brand-orange shrink-0"></span>
+                            <span><strong class="text-white">黃金組合：</strong>沙朗、雞腿或豬排，在鐵板上呈現焦香與滑嫩的矛盾平衡。</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-brand-orange shrink-0"></span>
+                            <span><strong class="text-white">最強配角：</strong>台式油麵吸收肉汁，邊緣微焦的口感最是迷人。</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1.5 w-2 h-2 rounded-full bg-brand-orange shrink-0"></span>
+                            <span><strong class="text-white">靈魂伴侶：</strong>生雞蛋、黑胡椒與蘑菇雙醬、古早味紅茶。</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 2: Origin -->
+            <div class="md:col-span-4 bg-gradient-to-br from-brand-red to-red-900 rounded-[24px] p-8 comic-border flex flex-col justify-between">
+                <div>
+                    <span class="text-white/60 font-mono text-xs tracking-tighter">SINCE 1976</span>
+                    <h2 class="text-3xl font-display font-800 text-white mt-2 mb-4 italic">溯源傳奇</h2>
+                    <p class="text-red-100/80 text-sm leading-relaxed">
+                        「台式牛排教父」孫東寶首創將平價牛排放在熱燙鐵板，加入麵條與生雞蛋。打破了「西餐」高攀不起的神話。
+                    </p>
+                </div>
+                <div class="mt-8 text-white font-bold text-lg">
+                    這是一場發生在街頭的<br><span class="bg-white text-brand-red px-2">飲食革命</span>
+                </div>
+            </div>
+
+            <!-- Item 3: Ritual -->
+            <div class="md:col-span-12 glass-card p-10 relative overflow-hidden">
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-white mb-6">爽快體驗：那一聲「儀式感」</h2>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            更值得玩味的是那份台灣人獨有的<span class="text-brand-gold font-bold">「遮油花儀式」</span>。當服務生端著噴濺不已的鐵板走過來，整桌人會迅速拿起大報紙或紙巾擋在胸前。
+                        </p>
+                        <div class="flex gap-4">
+                            <div class="px-4 py-2 bg-white/5 rounded-lg border border-white/10 text-center">
+                                <div class="text-brand-orange font-bold text-xl">$200</div>
+                                <div class="text-[10px] text-gray-500">極致 CP 值</div>
+                            </div>
+                            <div class="px-4 py-2 bg-white/5 rounded-lg border border-white/10 text-center">
+                                <div class="text-brand-orange font-bold text-xl">100%</div>
+                                <div class="text-[10px] text-gray-500">心靈滿足感</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="aspect-video bg-gradient-to-tr from-gray-800 to-gray-900 rounded-2xl border border-white/10 flex items-center justify-center p-8 text-center">
+                            <p class="text-brand-gold italic font-medium">「煙霧散去的那一刻，迎接那塊金黃誘人的驚喜，這份儀式感是任何高級餐廳都無法複製的。」</p>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-12 h-12 bg-brand-red rounded-full flex items-center justify-center text-white animate-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Critical Thinking -->
+            <div class="md:col-span-6 glass-card p-8 border-l-4 border-l-brand-red">
+                <h2 class="text-2xl font-bold text-white mb-6">真相大白：理性的糾結</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded bg-brand-red/20 text-brand-red flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h4 class="text-white font-semibold mb-1">肉品大哉問</h4>
+                            <p class="text-sm text-gray-500">重組肉標示、嫩精與磷酸鹽的使用，是商業模式與食安間的博弈。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded bg-brand-red/20 text-brand-red flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h4 class="text-white font-semibold mb-1">衛生考驗</h4>
+                            <p class="text-sm text-gray-500">開放空間、餐具清潔度與紅茶桶的生菌，始終是揮之不去的陰影。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Nutrition -->
+            <div class="md:col-span-6 glass-card p-8 border-l-4 border-l-brand-gold">
+                <h2 class="text-2xl font-bold text-white mb-6">營養師的崩潰</h2>
+                <p class="text-gray-400 text-sm mb-6">這頓餐點在營養學上或許不及格，但在我們心中的「撫慰指數」卻高得出奇。</p>
+                <div class="space-y-3">
+                    <div class="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div class="h-full bg-brand-orange w-[85%]"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-gray-500 uppercase tracking-widest">
+                        <span>澱粉與油脂</span>
+                        <span>85% 邪惡度</span>
+                    </div>
+                    <div class="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                        <div class="h-full bg-green-500 w-[5%]"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-gray-500 uppercase tracking-widest">
+                        <span>三色豆 (視覺點綴)</span>
+                        <span>5% 健康值</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Future -->
+        <section class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-display font-800 text-white mb-4">華麗轉身：2.0 版的轉型</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 text-center hover:-translate-y-2 transition-transform">
+                    <div class="text-4xl mb-4">🏪</div>
+                    <h3 class="text-white font-bold mb-2">品牌店面化</h3>
+                    <p class="text-sm text-gray-500">吹冷氣、坐沙發，更衛生也更時髦的體驗。</p>
+                </div>
+                <div class="glass-card p-6 text-center hover:-translate-y-2 transition-transform">
+                    <div class="text-4xl mb-4">🥩</div>
+                    <h3 class="text-white font-bold mb-2">原塊肉顯學</h3>
+                    <p class="text-sm text-gray-500">標榜真實口感，在高品質與平價中找尋平衡。</p>
+                </div>
+                <div class="glass-card p-6 text-center hover:-translate-y-2 transition-transform">
+                    <div class="text-4xl mb-4">🍦</div>
+                    <h3 class="text-white font-bold mb-2">自助餐化</h3>
+                    <p class="text-sm text-gray-500">除了牛排，吐司、冰淇淋、咖哩飯一併奉上。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="relative rounded-[40px] overflow-hidden p-12 text-center group">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-orange to-brand-red opacity-10 group-hover:opacity-20 transition-opacity"></div>
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-5xl font-display font-800 text-white mb-8">Comfort Food 的永恆魅力</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    無論世界如何進化，當那塊熱鐵板來到面前，那聲「滋滋響」依舊能瞬間擊穿所有理性的防線。它不完美，但它踏實、溫暖且充滿生命力。
+                </p>
+                <div class="mt-12">
+                    <button class="px-8 py-4 bg-brand-red text-white font-bold rounded-full hover:bg-brand-orange transition-colors comic-border">
+                        想吃牛排了嗎？
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="py-12 text-center border-t border-white/5 mt-12">
+        <p class="text-gray-600 text-xs tracking-widest uppercase mb-2">Article by</p>
+        <p class="text-brand-orange font-display font-600 tracking-widest">M11408002</p>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="fixed bottom-8 right-8 mix-blend-difference">
+        <div class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </div>
+
+</body>
+</html>
